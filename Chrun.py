@@ -16,8 +16,8 @@ html_temp = """
 st.set_page_config(page_title='Employee Churn Prediction', page_icon=':female-technologist:')
 st.image(image)
 st.markdown('***')
-st.markdown('# <center><span style="color:#286608">AutoScout Car</span> Price Predictor</center>',unsafe_allow_html=True )
-st.markdown("#### <center>Use the sidebar to enter your car's specifications.</center>",unsafe_allow_html=True)
+st.markdown('# <center><span style="color:#286608">Employee Churn Prediction</span> Price Predictor</center>',unsafe_allow_html=True )
+st.markdown("#### <center>Use the sidebar to enter your Employee's specifications.</center>",unsafe_allow_html=True)
 st.markdown('***')
 
 satisfaction_level = st.sidebar.slider(label="Satisfaction Level", min_value=0.0, max_value=1.0, step=0.01)
