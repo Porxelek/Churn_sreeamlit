@@ -39,7 +39,15 @@ hide_table_row_index = """
             .blank {display:none}
             </style>
             """        
-st.markdown(hide_table_row_index, unsafe_allow_html=True)            
+st.markdown(hide_table_row_index, unsafe_allow_html=True)   
+
+showdf = churn.rename(columns={'satisfaction_level': 'Satisfaction Level',
+                             'last_evaluation': 'Last Evaluation',
+                             'number_project': 'Number Of Project',
+                             'average_montly_hours': 'Average Monthly Hours',
+                             'time_spend_company': 'Time Spend in Company'})
+st.markdown("#### <center>Employee Information</center>",unsafe_allow_html=True)
+st.table(showdf)
 
 prediction = model.predict(churn)
 
