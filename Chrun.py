@@ -48,7 +48,7 @@ showdf = churn.rename(columns={'satisfaction_level': 'Satisfaction Level',
 st.markdown("#### <center>Employee Information</center>",unsafe_allow_html=True)
 st.table(showdf)
 
-prediction = model.predict(churn)
+prediction = model.predict(showdf)
 
 
 st.subheader('Click PREDICT if configuration is OK')
