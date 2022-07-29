@@ -22,9 +22,9 @@ st.markdown('***')
 
 satisfaction_level = st.sidebar.slider(label="Satisfaction Level", min_value=0.0, max_value=1.0, step=0.01)
 last_evaluation = st.sidebar.slider(label="Last Evaluation", min_value=0.0, max_value=1.0, step=0.01)
-number_project = st.sidebar.slider(label="Number Of Project", min_value=0, max_value=15, step=1)
+number_project = st.sidebar.slider(label="Number Of Project", min_value=0, max_value=10, step=1)
 average_montly_hours = st.sidebar.slider(label="Average Monthly Hours", min_value=0, max_value=350, step=10)
-time_spend_company = st.sidebar.slider("Time Spend in Company", min_value=1, max_value=20, step=1)
+time_spend_company = st.sidebar.slider("Time Spend in Company", min_value=1, max_value=10, step=1)
 
 churn = pd.DataFrame({"satisfaction_level" : [satisfaction_level],
                     "last_evaluation" : [last_evaluation],
