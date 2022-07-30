@@ -13,7 +13,7 @@ html_temp = """
 <div style="background-color:Blue;padding:10px">
 <h2 style="color:white;text-align:center;">Employee Churn Prediction - GROUP-9 </h2>
 </div><br>"""
-st.set_page_config(page_title='Employee Churn Prediction', page_icon=':female-technologist:')
+st.set_page_config(page_title='Employee Churn Prediction', page_icon='👩‍💻')
 st.image(image)
 st.markdown('***')
 st.markdown('# <center><span style="color:#286608">Employee Churn Prediction</span></center>',unsafe_allow_html=True )
